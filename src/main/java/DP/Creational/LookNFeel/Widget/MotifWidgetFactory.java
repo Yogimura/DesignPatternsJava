@@ -6,6 +6,8 @@ import DP.Creational.LookNFeel.Window.MotifWindow;
 import DP.Creational.LookNFeel.Window.Window;
 
 public class MotifWidgetFactory extends WidgetFactory{
+    private MotifWidgetFactory instance = null;
+
     @Override
     ScrollBar CreateScrollBar() {
         return new MotifScrollBar();
@@ -14,5 +16,13 @@ public class MotifWidgetFactory extends WidgetFactory{
     @Override
     Window CreateWindow() {
         return new MotifWindow();
+    }
+
+    public MotifWidgetFactory getInstance() {
+        if(instance == null) {
+            instance = new MotifWidgetFactory();
+        }
+
+        return instance;
     }
 }

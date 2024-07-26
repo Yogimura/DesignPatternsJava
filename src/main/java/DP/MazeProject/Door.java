@@ -1,4 +1,4 @@
-package DP.Creational.MazeProject;
+package DP.MazeProject;
 
 import lombok.Getter;
 import lombok.Setter;

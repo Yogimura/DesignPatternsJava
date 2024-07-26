@@ -1,4 +1,4 @@
-package DP.Creational.MazeProject;
+package DP.MazeProject;
 
 public class Wall extends MapSite{
 

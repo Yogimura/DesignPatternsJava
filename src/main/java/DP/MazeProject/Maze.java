@@ -1,4 +1,4 @@
-package DP.Creational.MazeProject;
+package DP.MazeProject;
 
 import java.util.ArrayList;
 import java.util.List;
